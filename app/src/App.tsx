@@ -4,7 +4,6 @@
 import {
   Route, RouterProvider, createBrowserRouter, createRoutesFromElements,
 } from 'react-router-dom';
-import './App.css';
 import Home from './pages/Home';
 
 function App() {
