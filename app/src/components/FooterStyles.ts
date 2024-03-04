@@ -13,6 +13,9 @@ export const FooterDivider = styled.rect`
 `;
 
 export const FooterSection = styled.section`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 `;
 
 export const FooterLogos = styled.div`
@@ -30,6 +33,8 @@ export const FooterRedelogo = styled.img`
 `;
 
 export const FooterLinks = styled.div`
+display: flex;
+flex-direction: row;
 `;
 
 export const FooterLinkDiv = styled.div`
