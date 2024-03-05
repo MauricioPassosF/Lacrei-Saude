@@ -1,5 +1,5 @@
 import {
-  Button, Head, Logo, Nav, Text,
+  ButtonGreen, Head, Logo, Nav, ButtonWhite,
 } from './HeaderStyles';
 
 import logoHor from '../assets/logo_LS_HOR.svg';
@@ -10,9 +10,9 @@ export default function Header() {
     <Head>
       <Logo className="logo" src={logoHor} />
       <Nav className="options">
-        <Text>Quem somos</Text>
-        <Text>Ajuda</Text>
-        <Button>Entrar</Button>
+        <ButtonWhite>Quem somos</ButtonWhite>
+        <ButtonWhite>Ajuda</ButtonWhite>
+        <ButtonGreen>Entrar</ButtonGreen>
       </Nav>
     </Head>
   );
