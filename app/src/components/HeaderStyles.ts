@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Head = styled.header`
   max-width: 1440px;
-  height: 96px;
+  /* height: 96px; */
   justify-content: space-between;
   display: flex;
   flex-direction: row;

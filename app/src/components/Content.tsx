@@ -21,7 +21,7 @@ export default function Content() {
           <WhiteButton>Oferecer atendimento</WhiteButton>
         </ContentNav>
       </ContentInfos>
-      <ContentImage src={contentImage} />
+      <ContentImage src={contentImage} alt="Médica mostrando tablet para enfermeira" />
     </ContentDiv>
   );
 }
