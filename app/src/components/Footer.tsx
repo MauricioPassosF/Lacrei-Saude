@@ -4,13 +4,15 @@ import {
   FooterButton,
   FooterDiv, FooterDivider, FooterInstText, FooterInstitucional, FooterLinkDiv,
   FooterLinkNav, FooterLinkText, FooterLinkTitle,
-  FooterLinks, FooterLogo, FooterLogos, FooterRedelogo, FooterRedes, FooterSection,
+  FooterLinks, FooterLogo, FooterLogos, FooterRedeButton,
+  FooterRedeLogo, FooterRedes, FooterSection,
 } from './FooterStyles';
 import logoFooter from '../assets/Logo_footer.svg';
 import logoFacebook from '../assets/facebook - novo.svg';
 import logoInstagram from '../assets/instagram - novo.png';
 import logoLinkedin from '../assets/linkedin - novo.png';
 import logoEmail from '../assets/email - novo.png';
+import footerButton from '../assets/footer_button.svg';
 
 interface ILink {title: string, nav: string[]}
 const redeLogos: string[] = [logoFacebook, logoInstagram, logoLinkedin, logoEmail];
@@ -37,7 +39,9 @@ export default function Footer() {
           <FooterLogo src={logoFooter} />
           <FooterRedes>
             {redeLogos.map((logo, index) => (
-              <FooterRedelogo key={index} src={logo} />
+              <FooterRedeButton>
+                <FooterRedeLogo key={index} src={logo} />
+              </FooterRedeButton>
             ))}
           </FooterRedes>
         </FooterLogos>
@@ -69,7 +73,7 @@ export default function Footer() {
             Copyright © 2021 Lacrei. Todos os direitos reservados. CNPJ: 51.265.351/0001-65
           </FooterInstText>
         </FooterInstitucional>
-        <FooterButton>^</FooterButton>
+        <FooterButton src={footerButton} />
       </FooterSection>
     </FooterDiv>
   );

@@ -4,7 +4,8 @@ export const ContentDiv = styled.div`
 display: flex;
 flex-direction: row;
 max-width: 1440px;
-margin: 48px 0px 64px 0px;
+padding: 48px 162px 64px 162px;
+background: rgba(255, 255, 255, 1);
 `;
 
 export const ContentImage = styled.img`
