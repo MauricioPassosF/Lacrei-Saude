@@ -8,7 +8,7 @@ import logoHor from '../assets/logo_LS_HOR.svg';
 export default function Header() {
   return (
     <Head data-testid="header">
-      <Logo className="logo" src={logoHor} />
+      <Logo className="logo" src={logoHor} alt="Logo da Lacrei Saúde" />
       <Nav className="options">
         <ButtonWhite>Quem somos</ButtonWhite>
         <ButtonWhite>Ajuda</ButtonWhite>

@@ -31,6 +31,7 @@ const links: ILink[] = [
     nav: ['Política de Privacidade', 'Termo de Uso', 'Direitos de Titular'],
   },
 ];
+const getNetworkName = (logoFile: string): string => logoFile.split('/')[3].split(' ')[0];
 
 export default function Footer() {
   return (
@@ -38,11 +39,11 @@ export default function Footer() {
       <FooterDivider />
       <FooterSection>
         <FooterLogos>
-          <FooterLogo src={logoFooter} />
+          <FooterLogo src={logoFooter} alt="Logo da Lacrei Saúde" />
           <FooterRedes>
             {redeLogos.map((logo, index) => (
               <FooterRedeButton>
-                <FooterRedeLogo key={index} src={logo} />
+                <FooterRedeLogo key={index} src={logo} alt={getNetworkName(logo)} />
               </FooterRedeButton>
             ))}
           </FooterRedes>
