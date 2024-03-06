@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-// interface IButtonProps {
-//   src: string;
-// }
-
 export const FooterDiv = styled.footer`
   max-width: 1440px;
   justify-content: space-between;
@@ -11,7 +7,7 @@ export const FooterDiv = styled.footer`
   flex-direction: column;
   padding: 1px 162px 24px 162px;
   background: rgba(255, 255, 255, 1);
-
+  margin: 0 auto;
 `;
 
 export const FooterDivider = styled.div`
@@ -29,15 +25,30 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: start;
+
+@media (max-width: 1350px) {
+      flex-direction: column;
+  }
 `;
 
 export const FooterLogos = styled.div`
+@media (max-width: 1350px) {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
 `;
 
 export const FooterLogo = styled.img`
 margin-bottom: 56px;
 width: 169.17px;
-height: 48px
+height: 48px;
+@media (max-width: 1350px) {
+  margin-bottom: 0px;
+  margin-right: 20px;
+  }
 `;
 
 export const FooterRedes = styled.div`
@@ -64,6 +75,9 @@ display: flex;
 flex-direction: row;
 width: 736px;
 justify-content: space-between;
+@media (max-width: 1350px) {
+      width: 100%;
+  }
 `;
 
 export const FooterLinkDiv = styled.div`
@@ -112,13 +126,16 @@ export const FooterButton = styled.button`
   border: 2px solid rgba(1, 135, 98, 1);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  @media (max-width: 1350px) {
+    margin-bottom: 20px;
+    margin-left: calc(100% - 48px);
+  }
 `;
 
 export const FooterButtonImage = styled.img`
 `;
 
 export const FooterInstText = styled.p`
-width: 1020px;
 font-family: Nunito;
 font-size: 14px;
 font-weight: 400;

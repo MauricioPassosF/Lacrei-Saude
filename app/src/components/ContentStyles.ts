@@ -2,10 +2,18 @@ import styled from 'styled-components';
 
 export const ContentDiv = styled.div`
 display: flex;
+position: relative;
 flex-direction: row;
 max-width: 1440px;
 padding: 48px 162px 64px 162px;
 background: rgba(255, 255, 255, 1);
+margin: 0 auto;
+justify-content: space-between;
+overflow: hidden;
+
+  @media (min-width: 1440px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const ContentImage = styled.img`
@@ -13,17 +21,45 @@ height: 491px;
 border-radius: 8px;
 object-fit: cover;
 width: 400.13px;
+position: relative;
+  z-index: 1;
+
+  @media (max-width: 1220px) {
+    width: 50%;
+    left: 50%;
+  }
 `;
 
 export const ContentNav = styled.nav`
 display: flex;
 flex-direction: row;
 gap: 24px;
-width: 488px
+width: 488px;
+@media (max-width: 1220px) {
+    width:100%
+  }
 `;
 
 export const ContentInfos = styled.div`
-margin: 80px 226px 80px 0px; 
+  margin: 80px 0px 80px 0px; 
+  position: relative;
+  z-index: 3;
+
+  @media (max-width: 1220px) {
+    position: absolute;
+    top: 80px;
+    rigth: 0;
+    transform: none;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(1, 135, 98, 1);
+    border-radius: 8px;
+    padding: 5px 10px 10px 10px;
+    width: 50%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 80px 226px 80px 0px; 
+  } 
 `;
 
 export const ContentRectangle = styled.div`
@@ -41,6 +77,7 @@ line-height: 58px;
 letter-spacing: 0em;
 text-align: left;
 color: rgba(19, 19, 19, 1);
+max-width:488px;
 `;
 
 export const ContentText = styled.div`
@@ -53,6 +90,9 @@ font-weight: 400;
 line-height: 36px;
 letter-spacing: 0em;
 text-align: left;
+@media (max-width: 1220px) {
+    width: 100%;
+  }
 `;
 
 export const GreenButton = styled.button`
@@ -69,9 +109,7 @@ padding: 10px 32px 10px 32px;
 border-radius: 8px;
 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 cursor: pointer;
-width: Hug (117px);
 height: 48px;
-gap: 24px;
 font-family: Nunito;
 letter-spacing: 0em;
 text-align: center;

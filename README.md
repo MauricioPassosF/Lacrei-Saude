@@ -36,7 +36,7 @@ Para executar este projeto localmente, siga estas etapas:
 
 ## Deploy
 
-A aplicação está com deploy realizado no Vercel. Sendo acessível no link 'https://lacrei-saude.vercel.app/'
+A aplicação está com deploy realizado no Vercel. Sendo acessível no link https://lacrei-saude.vercel.app/
 
 ## Contribuindo
 

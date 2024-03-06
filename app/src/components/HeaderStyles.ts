@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const Head = styled.header`
   max-width: 1440px;
-  /* height: 96px; */
   justify-content: space-between;
   display: flex;
   flex-direction: row;
   background: linear-gradient(180deg, #F5FFFB 31.04%, #FFFFFF 100%);
   padding: 24px 162px 24px 162px;
   align-items: center;
+  margin: 0 auto;
 `;
 export const Nav = styled.nav`
   width: 437px;
