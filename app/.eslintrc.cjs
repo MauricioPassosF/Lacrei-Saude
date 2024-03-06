@@ -13,7 +13,7 @@ module.exports = {
     tsconfigRootDir: './app',
     sourceType: 'module' 
   },
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs',"**/setupTests.ts", "**/vite.config.ts"],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {
