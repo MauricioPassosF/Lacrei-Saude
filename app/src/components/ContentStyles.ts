@@ -14,6 +14,10 @@ overflow: hidden;
   @media (min-width: 1440px) {
     justify-content: flex-start;
   }
+
+  @media (max-width: 1080px) {
+    padding: 48px 5% 64px 5%;
+  }
 `;
 
 export const ContentImage = styled.img`
@@ -28,6 +32,10 @@ position: relative;
     width: 50%;
     left: 50%;
   }
+
+  @media (max-width: 870px) {
+    display: none;
+  }
 `;
 
 export const ContentNav = styled.nav`
@@ -36,8 +44,13 @@ flex-direction: row;
 gap: 24px;
 width: 488px;
 @media (max-width: 1220px) {
-    width:100%
+    width:100%;
+    margin-top: 30%;
   }
+
+@media (max-width: 870px) {
+    flex-direction: column;
+  } 
 `;
 
 export const ContentInfos = styled.div`
@@ -47,19 +60,27 @@ export const ContentInfos = styled.div`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: 80px;
-    rigth: 0;
     transform: none;
     background: rgba(255, 255, 255, 1);
     border: 2px solid rgba(1, 135, 98, 1);
     border-radius: 8px;
     padding: 5px 10px 10px 10px;
-    width: 50%;
+    width: 45%;
+    height: 491px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: 1440px) {
     margin: 80px 226px 80px 0px; 
-  } 
+  }
+  @media (max-width: 870px) {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
 `;
 
 export const ContentRectangle = styled.div`

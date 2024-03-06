@@ -9,13 +9,26 @@ export const Head = styled.header`
   padding: 24px 162px 24px 162px;
   align-items: center;
   margin: 0 auto;
+  @media (max-width: 1080px) {
+    padding: 24px 5% 24px 5%;
+  }
 `;
 export const Nav = styled.nav`
   width: 437px;
   height: 48px;
   display: flex;
-  gap:16px
+  gap:16px;
 
+  @media (max-width: 680px) {
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    justify-content: end;
+  }
 `;
 export const Logo = styled.img`
   height: 24px;
@@ -32,7 +45,6 @@ line-height: 27px;
 letter-spacing: 0em;
 text-align: center;
 height: 48px;
-width: auto;
 padding: 10px 32px 10px 32px;
 border-radius: 8px;
 gap: 8px;
@@ -46,6 +58,14 @@ transition: all 0.2s ease 0s;
 &:hover {
     background: rgba(230,243,239,1);
 }
+
+@media (max-width: 680px) {
+    padding: 10px 5% 10px 5%;
+  }
+
+@media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const ButtonGreen = styled.button`
@@ -74,4 +94,8 @@ transition: all 0.2s ease 0s;
     background-color: rgba(0,119,86,1);
     border: 2px solid rgba(0,119,86,1);
 }
+
+@media (max-width: 680px) {
+    padding: 10px 5% 10px 5%;
+  }
 `;
