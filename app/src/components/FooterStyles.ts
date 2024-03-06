@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-interface IButtonProps {
-  src: string;
-}
+// interface IButtonProps {
+//   src: string;
+// }
 
 export const FooterDiv = styled.footer`
   max-width: 1440px;
@@ -100,19 +100,23 @@ color: rgba(45, 45, 45, 1);
 export const FooterInstitucional = styled.div`
 `;
 
-export const FooterButton = styled.button<IButtonProps>`
-  background: rgba(255, 255, 255, 1) url(${(props) => props.src}) no-repeat center center;
+export const FooterButton = styled.button`
+  background: rgba(255, 255, 255, 1) ;
   height: 48px;
-  width: 24px;
-  padding: 10px 12px 10px 12px;
+  width: 48px;
+  padding: 10px 21px 10px 21px;
   border-radius: 8px;
-  gap: 16px;
   align-items: center;
+  justify-content: center;
   display: flex;
   border: 2px solid rgba(1, 135, 98, 1);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 `;
+
+export const FooterButtonImage = styled.img`
+`;
+
 export const FooterInstText = styled.p`
 width: 1020px;
 font-family: Nunito;

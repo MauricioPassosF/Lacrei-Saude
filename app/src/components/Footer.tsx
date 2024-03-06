@@ -2,6 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {
   FooterButton,
+  FooterButtonImage,
   FooterDiv, FooterDivider, FooterInstText, FooterInstitucional, FooterLinkDiv,
   FooterLinkNav, FooterLinkText, FooterLinkTitle,
   FooterLinks, FooterLogo, FooterLogos, FooterRedeButton,
@@ -30,6 +31,7 @@ const links: ILink[] = [
     nav: ['Política de Privacidade', 'Termo de Uso', 'Direitos de Titular'],
   },
 ];
+
 export default function Footer() {
   return (
     <FooterDiv>
@@ -73,7 +75,9 @@ export default function Footer() {
             Copyright © 2021 Lacrei. Todos os direitos reservados. CNPJ: 51.265.351/0001-65
           </FooterInstText>
         </FooterInstitucional>
-        <FooterButton src={footerButton} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
+        <FooterButton onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <FooterButtonImage src={footerButton} alt="Botão para subir ao header" />
+        </FooterButton>
       </FooterSection>
     </FooterDiv>
   );
