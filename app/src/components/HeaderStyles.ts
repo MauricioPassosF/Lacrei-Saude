@@ -40,7 +40,12 @@ justify-content: center;
 align-items: center;
 border:2px solid transparent ;
 background: linear-gradient(180deg, #F5FFFB 31.04%, #FFFFFF 100%);
+cursor: pointer;
+transition: all 0.2s ease 0s;
 
+&:hover {
+    background: rgba(230,243,239,1);
+}
 `;
 
 export const ButtonGreen = styled.button`
@@ -57,11 +62,16 @@ padding: 10px 32px 10px 32px;
 border-radius: 8px;
 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 cursor: pointer;
-width: Hug (117px);
-height: Fixed (48px);
+height: 48px;
 gap: 8px;
 font-family: Nunito;
 letter-spacing: 0em;
 text-align: center;
 border:2px solid transparent ;
+transition: all 0.2s ease 0s;
+
+&:hover {
+    background-color: rgba(0,119,86,1);
+    border: 2px solid rgba(0,119,86,1);
+}
 `;

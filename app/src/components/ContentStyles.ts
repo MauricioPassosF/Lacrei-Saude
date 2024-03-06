@@ -76,6 +76,13 @@ font-family: Nunito;
 letter-spacing: 0em;
 text-align: center;
 border:2px solid transparent ;
+cursor: pointer;
+transition: all 0.2s ease 0s;
+
+&:hover {
+    background-color: rgba(0,119,86,1);
+    border: 2px solid rgba(0,119,86,1);
+}
 `;
 
 export const WhiteButton = styled.button`
@@ -98,5 +105,13 @@ gap: 24px;
 font-family: Nunito;
 letter-spacing: 0em;
 text-align: center;
-border: 2px solid rgba(1, 135, 98, 1)
+border: 2px solid rgba(1, 135, 98, 1);
+cursor: pointer;
+transition: all 0.2s ease 0s;
+
+&:hover {
+    background-color: rgba(0,119,86,1);
+    border: 2px solid rgba(0,119,86,1);
+    color: rgba(255,255,255,1)
+}
 `;

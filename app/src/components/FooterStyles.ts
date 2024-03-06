@@ -51,6 +51,7 @@ export const FooterRedeButton = styled.button`
   margin: 0px 8px;
   border-radius: 8px;
   border: 2px solid transparent;
+  cursor: pointer;
 `;
 
 export const FooterRedeLogo = styled.img`
@@ -110,6 +111,7 @@ export const FooterButton = styled.button<IButtonProps>`
   display: flex;
   border: 2px solid rgba(1, 135, 98, 1);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 `;
 export const FooterInstText = styled.p`
 width: 1020px;

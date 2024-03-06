@@ -73,7 +73,7 @@ export default function Footer() {
             Copyright © 2021 Lacrei. Todos os direitos reservados. CNPJ: 51.265.351/0001-65
           </FooterInstText>
         </FooterInstitucional>
-        <FooterButton src={footerButton} />
+        <FooterButton src={footerButton} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
       </FooterSection>
     </FooterDiv>
   );
